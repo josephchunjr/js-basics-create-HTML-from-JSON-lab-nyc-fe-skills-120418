@@ -20,17 +20,21 @@ const actor = document.getElementById("actor")
 
 console.log(movies.Titanic.title)
 
-const titanicSubmitButton = document.getElementById("Titanic")
-const termSumbitButton = document.getElementById("Terminator 2")
+//1 
+const titanicButton = document.getElementById("Titanic")
+const terminatorButton = document.getElementById("Terminator")
 
+//2 
 
-
-const titanicSubmit = () => {
-  // i want the title to change to the stored JSON
-  let title.innerHTML = movies.Titanic.title
+const changeMovie = () => {
+  const titleElement = document.getElementById("title")
+  titleElement.innerHTML = movies.Titanic.title
 }
-  
-titanicSubmitButton.addEventListener("Click", titanicSubmit)
-  
+
+titanicButton.addEventListener("click", changeMovie)
+terminatorButton.addEventListener("click", changeMovie)
+
+
+
   
 });
