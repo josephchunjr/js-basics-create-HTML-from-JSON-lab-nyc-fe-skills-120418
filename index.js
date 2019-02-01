@@ -66,7 +66,7 @@ const changeMovie = (movie) => {
   for (let review of movies[movie].reviews) {
     const li = document.createElement('li')
     li.innerHTML = review.username + ": " + review.content 
-    castUL.appendChild(li)
+    reviewsUL.appendChild(li)
     
   }
   
