@@ -29,6 +29,13 @@ const changeMovie = (movie) => {
   const posterImg = document.getElementById("poster")
   posterImg.src = movies[movie].poster
   
+  // description and score
+  
+  const descriptionElement = document.getElementById("description")
+  descriptionElement = movies[movie].description
+  const scoreElement = document.getElementById("score")
+  scoreElement = movies[movie].score
+  
   
 }
 
