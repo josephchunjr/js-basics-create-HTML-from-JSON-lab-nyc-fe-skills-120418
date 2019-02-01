@@ -26,7 +26,7 @@ const terminatorButton = document.getElementById("Terminator")
 
 //2 
 
-const changeMovie = () => {
+const changeMovie = (movie) => {
   const titleElement = document.getElementById("title")
   titleElement.innerHTML = movies.Titanic.title
 }
