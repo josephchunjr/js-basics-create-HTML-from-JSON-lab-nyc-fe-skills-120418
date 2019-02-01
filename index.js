@@ -34,7 +34,7 @@ const changeMovie = (movie) => {
   const descriptionElement = document.getElementById("description")
   descriptionElement.innerHTML = movies[movie].description
   const scoreElement = document.getElementById("score")
-  scoreElement.innerHTML = movies[movie].score
+  scoreElement.innerHTML = movies[movie].audienceScore
   
   
 }
