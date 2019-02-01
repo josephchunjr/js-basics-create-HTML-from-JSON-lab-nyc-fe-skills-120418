@@ -46,7 +46,7 @@ const changeMovie = (movie) => {
   for (let person of movies[movie].cast) {
     const li = document.createElement('li')
     li.innerHTML = person.role + ": " + person.actor // Jack: Leonardo DiCaprio
-    castUL.appendChild(li)
+    castUL.appendChild("li")
     
   }
   
