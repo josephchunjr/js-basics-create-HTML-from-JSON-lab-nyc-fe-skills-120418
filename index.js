@@ -22,7 +22,7 @@ console.log(movies.Titanic.title)
 
 //1 
 const titanicButton = document.getElementById("Titanic")
-const terminatorButton = document.getElementById("Terminator")
+const terminatorButton = document.getElementById("Terminator 2")
 
 //2 
 
