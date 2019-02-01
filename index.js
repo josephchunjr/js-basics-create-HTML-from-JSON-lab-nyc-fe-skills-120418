@@ -58,17 +58,17 @@ const changeMovie = (movie) => {
    const reviewsUL = document.createElement("ul") // <ul>
                                               // <li></li></ul>
   
-  //for every cast member, we need a li FOR every cast member
+  //for every review, we need a li FOR every cast review
   
-  for (let person of movies[movie].cast) {
+  for (let review of movies[movie].reviews) {
     const li = document.createElement('li')
-    li.innerHTML = person.role + ": " + person.actor // Jack: Leonardo DiCaprio
+    li.innerHTML = review.username + ": " + review.content 
     castUL.appendChild(li)
     
   }
   
-  const castDiv = document.getElementById("cast")
-  castDiv.appendChild(castUL)
+  const reviewsDiv = document.getElementById("reviews")
+  reviewsDiv.appendChild(castUL)
   
   
 }
