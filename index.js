@@ -53,6 +53,23 @@ const changeMovie = (movie) => {
   const castDiv = document.getElementById("cast")
   castDiv.appendChild(castUL)
   
+  //reviews
+  
+   const reviewsUL = document.createElement("ul") // <ul>
+                                              // <li></li></ul>
+  
+  //for every cast member, we need a li FOR every cast member
+  
+  for (let person of movies[movie].cast) {
+    const li = document.createElement('li')
+    li.innerHTML = person.role + ": " + person.actor // Jack: Leonardo DiCaprio
+    castUL.appendChild(li)
+    
+  }
+  
+  const castDiv = document.getElementById("cast")
+  castDiv.appendChild(castUL)
+  
   
 }
 
