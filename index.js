@@ -20,8 +20,9 @@ const changeMovie = (movie) => {
   const directorElement = document.getElementById("director")
   directorElement.innerHTML = movies[movie].director
   const genreElement = document.getElementById("genre")
-  genreElement = document.getElementById("genre")
-  
+  genreElement = movies[movie].genre
+  const filmRatingElement = document.getElementById("filmRating")
+  filmRatingElement = movies[movie].filmRating
 }
 
 titanicButton.addEventListener("click", () => changeMovie("Titanic"))
