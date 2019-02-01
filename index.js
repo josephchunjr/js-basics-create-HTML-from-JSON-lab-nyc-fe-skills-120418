@@ -28,11 +28,11 @@ const terminatorButton = document.getElementById("Terminator")
 
 const changeMovie = (movie) => {
   const titleElement = document.getElementById("title")
-  titleElement.innerHTML = movies.Titanic.title
+  titleElement.innerHTML = movies[movie].title
 }
 
-titanicButton.addEventListener("click", changeMovie)
-terminatorButton.addEventListener("click", changeMovie)
+titanicButton.addEventListener("click", () => changeMovie("Titanic"))
+terminatorButton.addEventListener("click", () => changeMovie("Terminator 2"))
 
 
 
