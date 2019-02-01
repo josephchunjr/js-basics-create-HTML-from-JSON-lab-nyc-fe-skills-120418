@@ -27,7 +27,7 @@ const termSumbitButton = document.getElementById("Terminator 2")
 
 const titanicSubmit = () => {
   // i want the title to change to JSON stored Titanic Obj.
-  let title = movies.Titanic.title
+  let title.innertext = movies.Titanic.title
 }
   
 titanicSubmitButton.addEventListener("Click", titanicSubmit)
