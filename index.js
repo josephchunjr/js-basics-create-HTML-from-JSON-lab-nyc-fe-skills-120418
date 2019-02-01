@@ -53,6 +53,9 @@ const changeMovie = (movie) => {
   const castDiv = document.getElementById("cast")
   castDiv.appendChild(castUL)
   
+  
+  
+  
   //reviews
   
    const reviewsUL = document.createElement("ul") // <ul>
@@ -68,7 +71,7 @@ const changeMovie = (movie) => {
   }
   
   const reviewsDiv = document.getElementById("reviews")
-  reviewsDiv.appendChild(castUL)
+  reviewsDiv.appendChild(reviewsUL)
   
   
 }
